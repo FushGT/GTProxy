@@ -148,13 +148,9 @@ bool Server::process_packet(ENetPeer* peer, ENetPacket* packet)
 //
 //        utils::TextParse text_parse{ message_data };
 //
-//        if (m_config->m_misc.force_update_game_version) {
-//            if (std::stoi(text_parse.get("game_version", 1)) > std::stoi(m_config->m_server.game_version)) {
-//                m_config->m_server.game_version = text_parse.get("game_version", 1);
-//            }
-//        }
 //
-//        text_parse.set("game_version", m_config->m_server.game_version);
+//
+//        text_parse.set("game_version", "4.05");
 //        text_parse.set("protocol", m_config->m_server.protocol);
 //        text_parse.set("mac", mac);
 //        text_parse.set("rid", rid);
